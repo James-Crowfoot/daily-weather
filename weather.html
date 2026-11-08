@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  
+  <head>
+    <title>Daily Weather</title>
+    
+    
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      html {
+      scroll-behavior: smooth;
+    }
+
+    </style>
+
+
+    <!-- ALSO PUT LIKE A WALLL OF TEXT BEHIND MAYBE OF THE PLACE NAMES-->
+    <script>
+        var places = ['Wimborne Minster','Fordingbridge','Blandford Forum','Poole','Brockenhurst','Kingston Maurward']; 
+        textSequence(0);
+        function textSequence(i) {
+
+            if (places.length > i) {
+                setTimeout(function() {
+                    document.getElementById("location").innerHTML = places[i];
+                    textSequence(++i);
+                }, 1000); // 1 second (in milliseconds)
+
+            } else if (places.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+
+  </head>
+<body class="w3-light-white w3-margin">
+
+<!-- Navigation bar with links -->
+<div class="w3-bar w3-white w3-text-black">
+  <h2 class="w3-left w3-tag w3-round" style="background-color: #003485;">Daily Weather</h2>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+Photo by <a href="https://unsplash.com/@noahsilliman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Noah Silliman</a> on <a href="https://unsplash.com/photos/water-drops-on-glass-i2J9jnvaAbU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+
+
+    <b><p class="fancy">The Actual Weather</p></b>
+    <p>Just for you James <3</p>
+  
+
+
+<div>
+<a class="weatherwidget-io" href="https://forecast7.com/en/50d80n1d98/wimborne-minster/" data-label_1="WIMBORNE MINSTER" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="weather_one" >WIMBORNE MINSTER WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+    </div>
+
+    <div>
+       <a class="weatherwidget-io" href="https://forecast7.com/en/50d93n1d79/fordingbridge/" data-label_1="FORDINGBRIDGE" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="weather_one" >FORDINGBRIDGE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+    </div>
+
+    
+
+    <div>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/50d86n2d17/blandford-forum/" data-label_1="BLANDFORD FORUM" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="weather_one" >BLANDFORD FORUM WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+    </div>
+
+    <div>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/50d72n1d99/poole/" data-label_1="POOLE" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="weather_one" >POOLE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+    </div>
+
+
+    
+
+  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
+    <p class="w3-small">This website was made by meeeeeeee!</p>
+    
+    <!-- End footer -->
+  </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

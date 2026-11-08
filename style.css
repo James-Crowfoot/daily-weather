@@ -1,0 +1,21 @@
+@font-face {
+    font-family: London Tube;
+    src: url(LondonTube-MABx.ttf);
+}
+  
+.fancy {
+            display: inline-block;
+            margin: 0;
+            font-size: 10vw;
+             background-color: #2f8d46;
+            background-image: url(
+'noah-silliman-i2J9jnvaAbU-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-family: London Tube;
+            src: url(LondonTube-MABx.ttf);
+}
